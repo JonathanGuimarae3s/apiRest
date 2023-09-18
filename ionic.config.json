@@ -1,0 +1,7 @@
+{
+  "name": "appcrud",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
