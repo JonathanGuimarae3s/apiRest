@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="secondary">
+    <ion-button color="" slot="end" (click)="addProduct()">Novo +</ion-button>
+
+    <ion-title>Usuários</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item *ngFor="let product of products">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>{{product.name}}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content> Descrição: {{product.description}} </ion-card-content>
+      <ion-card-content> Quantidade: {{product.amount}} </ion-card-content>
+      <ion-card-content>Preço:{{product.price}}</ion-card-content>
+      <ion-tab-button (click)="delete(product.cod)">
+        <ion-icon name="trash"></ion-icon>
+        <ion-label>Remover</ion-label>
+      </ion-tab-button>
+      <ion-tab-button (click)="update(product)">
+        <ion-icon name="pencil"></ion-icon>
+        <ion-label>Editar</ion-label>
+      </ion-tab-button>
+    </ion-card>
+  </ion-item>
+</ion-content>

@@ -23,9 +23,10 @@ const routes: Routes = [
     path: 'add-users',
     loadChildren: () => import('./pages/add-users/add-users.module').then( m => m.AddUsersPageModule)
   },
+  
   {
-    path: 'update-users',
-    loadChildren: () => import('./pages/update-users/update-users.module').then( m => m.UpdateUsersPageModule)
+    path: 'add-products',
+    loadChildren: () => import('./pages/add-products/add-products.module').then( m => m.AddProductsPageModule)
   },
 ];
 
