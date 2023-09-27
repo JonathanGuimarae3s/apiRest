@@ -19,11 +19,20 @@
     </ion-item>
     <ion-item>
       <ion-label position="floating">Cpf</ion-label>
-      <ion-input [(ngModel)]="datas.cpf" name="cpf"></ion-input>
+      <ion-input
+        [(ngModel)]="datas.cpf"
+        maxlength="11"
+        name="cpf"
+        placeholder="Apenas números"
+      ></ion-input>
     </ion-item>
     <ion-item>
       <ion-label position="floating">senha</ion-label>
-      <ion-input type='password' [(ngModel)]="datas.senha" name="senha"></ion-input>
+      <ion-input
+        type="password"
+        [(ngModel)]="datas.senha"
+        name="senha"
+      ></ion-input>
     </ion-item>
     <ion-item>
       <ion-label position="floating">nivel</ion-label>

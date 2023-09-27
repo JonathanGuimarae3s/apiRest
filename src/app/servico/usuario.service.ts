@@ -39,6 +39,13 @@ export class UsuarioService {
     return this.http.put(this.apiUrl + '/' + id, user);
   }
 
+  getUserByEmail(email: any) {
+    return this.http.get(this.apiUrl + '/' + email);
+  }
+  getUserByCPF(cpf:any){
+    return this.http.get(this.apiUrl + '/' + cpf);
 
+
+  }
 
 }

@@ -6,6 +6,7 @@ export interface Product {
   description: string;
   amount: string;
   price: string;
+  serie:string
 
 }
 @Injectable({
@@ -31,5 +32,8 @@ export class ProductService {
   }
   create(product: Product) {
     return this.http.post(this.apiUrl, product);
+  }
+  public getProductBySerie( serie: any) {
+    return this.http.get(this.apiUrl + '/' + serie);
   }
 }

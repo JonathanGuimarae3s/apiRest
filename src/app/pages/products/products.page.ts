@@ -39,6 +39,10 @@ export class ProductsPage implements OnInit {
     })
 
   }
+ 
+
+
+
   /**
    * addProduct
    */
