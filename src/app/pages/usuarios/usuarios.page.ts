@@ -27,6 +27,7 @@ export class UsuariosPage implements OnInit {
 
         // console.log(response);
         this.users = response;
+        console.log(response)
 
       }
 
@@ -87,6 +88,7 @@ export class UsuariosPage implements OnInit {
         this.service.getAll().subscribe(
           (response) => {
             this.users = response;
+
           }
         )
 
